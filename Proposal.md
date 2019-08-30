@@ -11,7 +11,7 @@ From a workflow the requirements are:
 6. The new resource is tagged with all the required data. Url, identifier for dynamic environment resource, PR, commit identifiers etc.
 7. Clean-up / retention of dynamic environment based on environemnt.resources tagged as dynamic
 
-One other intent is to lower the concept. For example avoid adding new complexities to yaml. We explored numerious options from a new typed jon/stage to lifecycle hooks.
+One other intent is to lower the concept count. For example avoid adding new complexities to yaml. We explored numerious options from a new typed jon/stage to lifecycle hooks.
 
 
 ## Backend capabilities which are a must have
