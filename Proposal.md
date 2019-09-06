@@ -79,7 +79,11 @@ stages:
       vmImage: 'ubuntu-latest'
     condition: and(succeeded(), startsWith(variables['Build.SourceBranch'], 'refs/pull/'))     
     environment: $(devEnvironment)
-      reviewApp: true
+      name: string              # name of the environment to run this job on.
+      resourceName: string      # name of the resource in the environment to record the deployments against
+      resourceId: number        # resource identifier
+      resourceType: string      # type of the resource you want to target. Supported types - VM, Kubernetes, AppService
+      tags: string | [ string ] # tag names to filter the resources in the environment
       # The exact name is TBD
       # For K8s and Azure Web App, this flag when set to true will create a clone of Env.Resource
       # For K8s it will
